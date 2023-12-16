@@ -1,0 +1,45 @@
+{
+	"info": {
+		"_postman_id": "d6221a44-3fb4-40b4-97c8-07b7b0d735f1",
+		"name": "Api Security",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"id": "fc7af219-a0bc-4c51-8ed6-fc02a984a290",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"id": "0139c2c5-6e8c-4c3e-a664-b5d2bc95ec75",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"id": "09b3ed63-bed0-46ea-97a9-2e2f11cecb50",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
