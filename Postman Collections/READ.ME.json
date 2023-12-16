@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "New Request",
+			"name": "WelcomeRequest",
 			"id": "fc7af219-a0bc-4c51-8ed6-fc02a984a290",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -18,7 +18,7 @@
 			"response": []
 		},
 		{
-			"name": "New Request",
+			"name": "AddUsers",
 			"id": "0139c2c5-6e8c-4c3e-a664-b5d2bc95ec75",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -30,7 +30,7 @@
 			"response": []
 		},
 		{
-			"name": "New Request",
+			"name": "GenerateToken",
 			"id": "09b3ed63-bed0-46ea-97a9-2e2f11cecb50",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
