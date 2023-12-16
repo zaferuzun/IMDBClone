@@ -13,7 +13,8 @@
 			},
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": "http://localhost:8080/auth/welcome"
 			},
 			"response": []
 		},
@@ -24,8 +25,18 @@
 				"disableBodyPruning": true
 			},
 			"request": {
-				"method": "GET",
-				"header": []
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\r\n    \"name\": \"zuzu\",\r\n    \"password\": \"1234\",\r\n    \"email\":\"aaaa@f\",\r\n    \"roles\":\"ROLE_USER\"\r\n},\r\n{\r\n    \"name\": \"zuzu2\",\r\n    \"password\": \"1234\",\r\n    \"email\":\"aaaa@f\",\r\n    \"roles\":\"ROLE_ADMIN\"\r\n}\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/auth/addNewUsers"
 			},
 			"response": []
 		},
@@ -36,8 +47,65 @@
 				"disableBodyPruning": true
 			},
 			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"zuzu2\",\r\n    \"password\": \"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/auth/generateToken"
+			},
+			"response": []
+		},
+		{
+			"name": "AdminRequest",
+			"id": "c2bb35c7-3519-4cc2-9b73-c18eb1e9547b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ6dXp1MiIsImlhdCI6MTcwMjc2NTExNSwiZXhwIjoxNzAyNzY2OTE1fQ.jDuGFHSigxKCw_w_uxUc6L5aWWt6VgKfqKzKGMFYD9A"
+					}
+				},
 				"method": "GET",
-				"header": []
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/auth/admin/adminProfile"
+			},
+			"response": []
+		},
+		{
+			"name": "UserRequest",
+			"id": "e1895d63-4294-49e8-b0d9-6b6e496bb908",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ6dXp1MiIsImlhdCI6MTcwMjc2NTExNSwiZXhwIjoxNzAyNzY2OTE1fQ.jDuGFHSigxKCw_w_uxUc6L5aWWt6VgKfqKzKGMFYD9A"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/auth/user/userProfile"
 			},
 			"response": []
 		}
